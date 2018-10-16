@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/top_nav"
+        android:background="@color/colorThem">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#bebebe"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/serve"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/serve" />
+
+        <ImageView
+            android:id="@+id/setup"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/setup" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/my_nav">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:src="@drawable/log" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#bebebe"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progressbar1"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:background="#fff"
+                android:max="100"
+                android:progress="42"
+                android:progressTint="#30ab49" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressbar1"
+                android:layout_alignLeft="@+id/progressbar1"
+                android:paddingRight="10dp"
+                android:text="立即登陆"
+                android:textColor="#bebebe"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/vip"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/progressbar1"
+                android:layout_toRightOf="@+id/name"
+                android:paddingBottom="2dp"
+                android:src="@drawable/vip" />
+
+            <TextView
+                android:id="@+id/used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbar1"
+                android:paddingRight="5dp"
+                android:text="0"
+                android:textColor="#bebebe"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/GB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbar1"
+                android:layout_toRightOf="@+id/used"
+                android:text="GB/"
+                android:textColor="#bebebe"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbar1"
+                android:layout_toRightOf="@+id/GB1"
+                android:paddingRight="5dp"
+                android:text="0"
+                android:textColor="#bebebe"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/GB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbar1"
+                android:layout_toRightOf="@+id/all"
+                android:paddingRight="20dp"
+                android:text="GB"
+                android:textColor="#bebebe"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbar1"
+                android:layout_toRightOf="@+id/GB2"
+                android:paddingRight="5dp"
+                android:text="0"
+                android:textColor="#bebebe"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbar1"
+                android:layout_toRightOf="@+id/percent"
+                android:text="%"
+                android:textColor="#bebebe"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/goon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12sp"
+            android:src="@drawable/go" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/top_nav"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="CloudPrint服务"
+            android:textColor="#3c3f41"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/wallet"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/wallet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的钱包"
+                android:textColor="#3c3f41"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/collect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的收藏"
+                android:textColor="#3c3f41"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cloud_storage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cloud_storage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的网盘"
+                android:textColor="#3c3f41"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/recently"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/recently" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的足迹"
+                android:textColor="#3c3f41"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#b1b4b7" />
+</LinearLayout>

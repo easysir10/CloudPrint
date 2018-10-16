@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CloudPrint</string>
+    <string-array name="paixu">
+        <item>综合排序</item>
+        <item>好评优先</item>
+        <item>配送最快</item>
+        <item>配送费最低</item>
+    </string-array>
+</resources>
